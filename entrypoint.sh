@@ -17,7 +17,7 @@ setupSSH() {
   eval $(ssh-agent)
   ssh-add "$SSH_PATH/deploy_key"
 
-  ssh-keyscan -t rsa $INPUT_HOST >> "$SSH_PATH/known_hosts"
+  # ssh-keyscan -t rsa $INPUT_HOST >> "$SSH_PATH/known_hosts"
 }
 
 executeSSH() {
